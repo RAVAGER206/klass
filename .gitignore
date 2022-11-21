@@ -1,32 +1,34 @@
-# Prerequisites
-*.d
+#include <iostream>
+using namespace std;
+int main(){
+int a, b, c, d, f;
+cin >> a; // число
+cin >> b; // кол-во бит
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+if (a < 0) // знак в начале
+{
+d = 1;
+}else{
+d = 0;
+}
 
-# Precompiled Headers
-*.gch
-*.pch
+f = a;
+while (f != 0) // перевод числа
+{
+    if (f < 0){
+f = f * -1;
+}else{
+f = f * 1;
+}
+c = f % 2;
+cout << c;
+f = f / 2;
+}
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+cout << d;
 
-# Fortran module files
-*.mod
-*.smod
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
 
-# Executables
-*.exe
-*.out
-*.app
+
+return 0;
+}
