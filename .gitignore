@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 int main(){
-int a, b, c, d, f;
+int a, b, c, d, f, t, e;
 cin >> a; // число
 cin >> b; // кол-во бит
 
@@ -13,6 +13,7 @@ d = 0;
 }
 
 f = a;
+t = 0;
 while (f != 0) // перевод числа
 {
     if (f < 0){
@@ -23,10 +24,11 @@ f = f * 1;
 c = f % 2;
 cout << c;
 f = f / 2;
+t = t + 1;
 }
-
+t = t + 1;
+e = b - t;
 cout << d;
-
 
 
 
